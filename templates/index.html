@@ -2,88 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Выпускная квалификационная работа по курсу "Data Science Pro"</title>
+    <title>ВКР по курсу "Data Science Pro"</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h2>Модель нейронной сети для прогнозирования показателя "соотношение матрица-наполнитель"</h2>
-
-    {% if error %}
-        <pre style="color:DarkRed">{{ error }}</pre>
-    {% endif %}
-
-    <form action="" method="post">
-    <p>
-	    <label for="var2">Плотность, кг/м3 (1785...2161)</label>
-	    <input type="text" name="var2" value="{{ params.get('var2') }}">
-	</p>
-    <p>
-	    <label for="var3">Модуль упругости, ГПа (3...1628)</label>
-	    <input type="text" name="var3" value="{{ params.get('var3') }}">
-	</p>
-    <p>
-	    <label for="var4">Количество отвердителя, м.% (39...181)</label>
-	    <input type="text" name="var4" value="{{ params.get('var4') }}">
-	</p>
-    <p>
-	    <label for="var5">Содержание эпоксидных групп,%_2 (16...28)</label>
-	    <input type="text" name="var5" value="{{ params.get('var5') }}">
-	</p>
-    <p>
-	    <label for="var6">Температура вспышки, С_2 (179...386)</label>
-	    <input type="text" name="var6" value="{{ params.get('var6') }}">
-	</p>
-    <p>
-	    <label for="var7">Поверхностная плотность, г/м2 (1...1291)</label>
-	    <input type="text" name="var7" value="{{ params.get('var7') }}">
-	</p>
-    <p>
-	    <label for="var8">Модуль упругости при растяжении, ГПа (65...81)</label>
-	    <input type="text" name="var8" value="{{ params.get('var8') }}">
-	</p>
-    <p>
-	    <label for="var9">Прочность при растяжении, МПа (1250...3654)</label>
-	    <input type="text" name="var9" value="{{ params.get('var9') }}">
-	</p>
-    <p>
-	    <label for="var10">Потребление смолы, г/м2 (72...359)</label>
-	    <input type="text" name="var10" value="{{ params.get('var10') }}">
-	</p>
-    <p>
-	    <label for="var11">Угол нашивки (0 или 1)</label>
-	    <input type="text" name="var11" value="{{ params.get('var11') }}">
-	</p>
-    <p>
-	    <label for="var12">Шаг нашивки (1...13)</label>
-	    <input type="text" name="var12" value="{{ params.get('var12') }}">
-	</p>
-    <p>
-	    <label for="var13">Плотность нашивки (28...86)</label>
-	    <input type="text" name="var13" value="{{ params.get('var13') }}">
-	</p>
-	<p>
-	    <input type="submit">
-	</p>
-    </form>
-
-    {% if var1 %}
-		<p>Входные переменные:</p>
-		{{ inputs|safe }}
-
-		<p>Результат модели:</p>
-		<table border="1" class="dataframe">
-		  <thead>
-			<tr>
-			  <th>Соотношение матрица-наполнитель</th>
-			</tr>
-		  </thead>
-		  <tbody>
-			<tr>
-			  <td>{{ var1 }}</td>
-			</tr>
-		  </tbody>
-		</table>
-
-    {% endif %}
-
+    <div class="container">
+        <h2>Модель нейронной сети для прогнозирования показателя "соотношение матрица-наполнитель"</h2>
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+        <form action="" method="post">
+            <div>
+                <label for="var2">Плотность, кг/м3 (от 1785 до 2161)</label>
+                <input type="text" name="var2" value="{{ params.get('var2') }}" autocomplete="off">
+            </div>
+            <div>
+                <label for="var3">Модуль упругости, ГПа (от 3 до 1628)</label>
+                <input type="text" name="var3" value="{{ params.get('var3') }}" autocomplete="off">
+            </div>
+            <div>
+                <label for="var4">Количество отвердителя, м.% (от 39 до 181)</label>
+                <input type="text" name="var4" value="{{ params.get('var4') }}" autocomplete="off">
+            </div>
+            <div>
+                <label for="var5">Содержание эпоксидных групп,%_2 (от 16 до 28)</label>
+                <input type="text" name="var5" value="{{ params.get('var5') }}" autocomplete="off">
+            </div>
+            <div>
+                <label for="var6">Температура вспышки, С_2 (от 179 до 386)</label>
+                <input type="text" name="var6" value="{{ params.get('var6') }}" autocomplete="off">
+            </div>
+            <div>
+                <label for="var7">Поверхностная плотность, г/м2 (от 1 до 1291)</label>
+                <input type="text" name="var7" value="{{ params.get('var7') }}" autocomplete="off">
+            </div>
+            <div>
+                <label for="var8">Модуль упругости при растяжении, ГПа (от 65 до 81)</label>
+                <input type="text" name="var8" value="{{ params.get('var8') }}" autocomplete="off">
+            </div>
+            <div>
+                <label for="var9">Прочность при растяжении, МПа (от 1250 до 3654)</label>
+                <input type="text" name="var9" value="{{ params.get('var9') }}" autocomplete="off">
+            </div>
+            <div>
+                <label for="var10">Потребление смолы, г/м2 (от 72 до 359)</label>
+                <input type="text" name="var10" value="{{ params.get('var10') }}" autocomplete="off">
+            </div>
+            <div>
+                <label for="var11">Угол нашивки (0 или 1)</label>
+                <input type="text" name="var11" value="{{ params.get('var11') }}" autocomplete="off">
+            </div>
+            <div>
+                <label for="var12">Шаг нашивки (от 1 до 13)</label>
+                <input type="text" name="var12" value="{{ params.get('var12') }}" autocomplete="off">
+            </div>
+            <div>
+                <label for="var13">Плотность нашивки (от 28 до 86)</label>
+                <input type="text" name="var13" value="{{ params.get('var13') }}" autocomplete="off">
+            </div>
+            <div>
+                <input type="submit" value="Узнать Результат">
+            </div>
+        </form>
+        {% if var1 %}
+            <div class="result">
+                Результат модели:<br>
+                Соотношение матрица-наполнитель: {{ var1 }}
+            </div>
+        {% endif %}
+    </div>
 </body>
 </html>
