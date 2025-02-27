@@ -6,7 +6,6 @@ import tensorflow as tf
 MODEL_PATH = "models/model_NN_2.keras"
 PREPROCESSOR_PATH = "models/Preprocessor_NN_scaler.pkl"
 
-# Загрузка модели и препроцессора при старте сервера
 model_NN = tf.keras.models.load_model(MODEL_PATH)
 with open(PREPROCESSOR_PATH, "rb") as f:
     preprocessor_NN = pickle.load(f)

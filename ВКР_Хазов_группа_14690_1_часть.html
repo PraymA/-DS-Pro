@@ -1,0 +1,3616 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>7c0c3acf200c4997b0b52ad7090911c7</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="cell code" data-execution_count="4" id="MwYUKIgi-mYq">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># импортируем основные библиотеки</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sklearn</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">&quot;ignore&quot;</span>)</span></code></pre></div>
+</div>
+<div class="cell markdown" id="424o_V86Dx49">
+<p>##<em>Выгрузка исходных датасетов</em></p>
+</div>
+<div class="cell code" data-execution_count="5"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:241}"
+id="gbK0GeplEXSr" data-outputId="fc93f8d6-aac3-4bd5-e53f-f09c29b2e552">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># датасеты загружены через облако google drive</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>X_bp <span class="op">=</span> pd.read_excel(<span class="st">&#39;/content/drive/MyDrive/DatasetsVKR/X_bp.xlsx&#39;</span>) <span class="co"># датасет с характеристиками базальтопластика</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>X_bp.drop(<span class="st">&#39;Unnamed: 0&#39;</span>, axis <span class="op">=</span> <span class="dv">1</span>, inplace<span class="op">=</span><span class="va">True</span>) <span class="co"># избавляемся от лишнего столбца индексов</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(X_bp.shape) <span class="co"># выводим размерность 1го датасета</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>X_bp.head()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>(1023, 10)
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="5">
+
+  <div id="df-6da8de2c-40bf-4e4a-ac3a-5a0411861471" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Соотношение матрица-наполнитель</th>
+      <th>Плотность, кг/м3</th>
+      <th>модуль упругости, ГПа</th>
+      <th>Количество отвердителя, м.%</th>
+      <th>Содержание эпоксидных групп,%_2</th>
+      <th>Температура вспышки, С_2</th>
+      <th>Поверхностная плотность, г/м2</th>
+      <th>Модуль упругости при растяжении, ГПа</th>
+      <th>Прочность при растяжении, МПа</th>
+      <th>Потребление смолы, г/м2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1.857143</td>
+      <td>2030.0</td>
+      <td>738.736842</td>
+      <td>30.00</td>
+      <td>22.267857</td>
+      <td>100.000000</td>
+      <td>210.0</td>
+      <td>70.0</td>
+      <td>3000.0</td>
+      <td>220.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1.857143</td>
+      <td>2030.0</td>
+      <td>738.736842</td>
+      <td>50.00</td>
+      <td>23.750000</td>
+      <td>284.615385</td>
+      <td>210.0</td>
+      <td>70.0</td>
+      <td>3000.0</td>
+      <td>220.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1.857143</td>
+      <td>2030.0</td>
+      <td>738.736842</td>
+      <td>49.90</td>
+      <td>33.000000</td>
+      <td>284.615385</td>
+      <td>210.0</td>
+      <td>70.0</td>
+      <td>3000.0</td>
+      <td>220.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1.857143</td>
+      <td>2030.0</td>
+      <td>738.736842</td>
+      <td>129.00</td>
+      <td>21.250000</td>
+      <td>300.000000</td>
+      <td>210.0</td>
+      <td>70.0</td>
+      <td>3000.0</td>
+      <td>220.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2.771331</td>
+      <td>2030.0</td>
+      <td>753.000000</td>
+      <td>111.86</td>
+      <td>22.267857</td>
+      <td>284.615385</td>
+      <td>210.0</td>
+      <td>70.0</td>
+      <td>3000.0</td>
+      <td>220.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-6da8de2c-40bf-4e4a-ac3a-5a0411861471')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-6da8de2c-40bf-4e4a-ac3a-5a0411861471 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-6da8de2c-40bf-4e4a-ac3a-5a0411861471');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-a7b779d8-6318-4250-bf2b-9f2339f8a71f">
+  <button class="colab-df-quickchart" onclick="quickchart('df-a7b779d8-6318-4250-bf2b-9f2339f8a71f')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-a7b779d8-6318-4250-bf2b-9f2339f8a71f button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code" data-execution_count="6"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:224}"
+id="UHpsIhVOLSF5" data-outputId="37973446-b54b-434a-accb-78656b3b5cfe">
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>X_nup <span class="op">=</span> pd.read_excel(<span class="st">&#39;/content/drive/MyDrive/DatasetsVKR/X_nup.xlsx&#39;</span>) <span class="co"># датасет с характеристиками углепластика</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>X_nup.drop(<span class="st">&#39;Unnamed: 0&#39;</span>, axis <span class="op">=</span> <span class="dv">1</span>, inplace<span class="op">=</span><span class="va">True</span>) <span class="co"># избавляемся от лишнего столбца индексов</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(X_nup.shape) <span class="co"># выводим размерность 2го датасета</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>X_nup.head()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>(1040, 3)
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="6">
+
+  <div id="df-1f106c30-2462-414d-9441-68c21294d2a3" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Угол нашивки, град</th>
+      <th>Шаг нашивки</th>
+      <th>Плотность нашивки</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>4.0</td>
+      <td>57.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0</td>
+      <td>4.0</td>
+      <td>60.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0</td>
+      <td>4.0</td>
+      <td>70.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0</td>
+      <td>5.0</td>
+      <td>47.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0</td>
+      <td>5.0</td>
+      <td>57.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-1f106c30-2462-414d-9441-68c21294d2a3')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-1f106c30-2462-414d-9441-68c21294d2a3 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-1f106c30-2462-414d-9441-68c21294d2a3');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-3e807058-5478-458b-a22c-4c7e49350ef3">
+  <button class="colab-df-quickchart" onclick="quickchart('df-3e807058-5478-458b-a22c-4c7e49350ef3')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-3e807058-5478-458b-a22c-4c7e49350ef3 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell markdown" id="Hqfu8Y-KPAsm">
+<p>Согласно условию задания, необходимо замерджить датасеты по типу
+объединения INNER</p>
+</div>
+<div class="cell code" data-execution_count="7"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:258}"
+id="kn2b4BjoPj8H" data-outputId="3d4556e2-9082-4485-d1d0-56dceed2bd5d">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>df_X <span class="op">=</span> X_bp.merge(X_nup, left_index <span class="op">=</span> <span class="va">True</span>, right_index <span class="op">=</span> <span class="va">True</span>, how <span class="op">=</span> <span class="st">&#39;inner&#39;</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;Итоговый датасет имеет размерность </span><span class="sc">{</span>df_X<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">,на первоначальном этапе обработки данных было отброшено </span><span class="sc">{</span>X_nup<span class="sc">.</span>shape[<span class="dv">0</span>]<span class="op">-</span>df_X<span class="sc">.</span>shape[<span class="dv">0</span>]<span class="sc">}</span><span class="ss"> строк из 2го датасета&#39;</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>df_X.head()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Итоговый датасет имеет размерность (1023, 13),на первоначальном этапе обработки данных было отброшено 17 строк из 2го датасета
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="7">
+
+  <div id="df-7624a417-8182-4ff9-b0e5-031451e93184" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Соотношение матрица-наполнитель</th>
+      <th>Плотность, кг/м3</th>
+      <th>модуль упругости, ГПа</th>
+      <th>Количество отвердителя, м.%</th>
+      <th>Содержание эпоксидных групп,%_2</th>
+      <th>Температура вспышки, С_2</th>
+      <th>Поверхностная плотность, г/м2</th>
+      <th>Модуль упругости при растяжении, ГПа</th>
+      <th>Прочность при растяжении, МПа</th>
+      <th>Потребление смолы, г/м2</th>
+      <th>Угол нашивки, град</th>
+      <th>Шаг нашивки</th>
+      <th>Плотность нашивки</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1.857143</td>
+      <td>2030.0</td>
+      <td>738.736842</td>
+      <td>30.00</td>
+      <td>22.267857</td>
+      <td>100.000000</td>
+      <td>210.0</td>
+      <td>70.0</td>
+      <td>3000.0</td>
+      <td>220.0</td>
+      <td>0</td>
+      <td>4.0</td>
+      <td>57.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1.857143</td>
+      <td>2030.0</td>
+      <td>738.736842</td>
+      <td>50.00</td>
+      <td>23.750000</td>
+      <td>284.615385</td>
+      <td>210.0</td>
+      <td>70.0</td>
+      <td>3000.0</td>
+      <td>220.0</td>
+      <td>0</td>
+      <td>4.0</td>
+      <td>60.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1.857143</td>
+      <td>2030.0</td>
+      <td>738.736842</td>
+      <td>49.90</td>
+      <td>33.000000</td>
+      <td>284.615385</td>
+      <td>210.0</td>
+      <td>70.0</td>
+      <td>3000.0</td>
+      <td>220.0</td>
+      <td>0</td>
+      <td>4.0</td>
+      <td>70.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1.857143</td>
+      <td>2030.0</td>
+      <td>738.736842</td>
+      <td>129.00</td>
+      <td>21.250000</td>
+      <td>300.000000</td>
+      <td>210.0</td>
+      <td>70.0</td>
+      <td>3000.0</td>
+      <td>220.0</td>
+      <td>0</td>
+      <td>5.0</td>
+      <td>47.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2.771331</td>
+      <td>2030.0</td>
+      <td>753.000000</td>
+      <td>111.86</td>
+      <td>22.267857</td>
+      <td>284.615385</td>
+      <td>210.0</td>
+      <td>70.0</td>
+      <td>3000.0</td>
+      <td>220.0</td>
+      <td>0</td>
+      <td>5.0</td>
+      <td>57.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-7624a417-8182-4ff9-b0e5-031451e93184')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-7624a417-8182-4ff9-b0e5-031451e93184 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-7624a417-8182-4ff9-b0e5-031451e93184');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-f25c11ef-da8d-4be3-b4d9-021afe6eabe4">
+  <button class="colab-df-quickchart" onclick="quickchart('df-f25c11ef-da8d-4be3-b4d9-021afe6eabe4')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-f25c11ef-da8d-4be3-b4d9-021afe6eabe4 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell markdown" id="jYRuZSkHRHYD">
+<p>##<em>Проведение разведочного анализа данных (EDA)</em></p>
+</div>
+<div class="cell code" data-execution_count="8"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="5RMXcVSYP6js" data-outputId="5d697d87-974b-4be0-d165-5f217764354e">
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df_X.info() <span class="co"># выведем основую информацию о сформированном датасете</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+Index: 1023 entries, 0 to 1022
+Data columns (total 13 columns):
+ #   Column                                Non-Null Count  Dtype  
+---  ------                                --------------  -----  
+ 0   Соотношение матрица-наполнитель       1023 non-null   float64
+ 1   Плотность, кг/м3                      1023 non-null   float64
+ 2   модуль упругости, ГПа                 1023 non-null   float64
+ 3   Количество отвердителя, м.%           1023 non-null   float64
+ 4   Содержание эпоксидных групп,%_2       1023 non-null   float64
+ 5   Температура вспышки, С_2              1023 non-null   float64
+ 6   Поверхностная плотность, г/м2         1023 non-null   float64
+ 7   Модуль упругости при растяжении, ГПа  1023 non-null   float64
+ 8   Прочность при растяжении, МПа         1023 non-null   float64
+ 9   Потребление смолы, г/м2               1023 non-null   float64
+ 10  Угол нашивки, град                    1023 non-null   int64  
+ 11  Шаг нашивки                           1023 non-null   float64
+ 12  Плотность нашивки                     1023 non-null   float64
+dtypes: float64(12), int64(1)
+memory usage: 111.9 KB
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="9"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:492}"
+id="MDa3sManc9T_" data-outputId="a4532697-4656-48bd-b52d-e8beefe11860">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>df_X.isnull().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="9">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Соотношение матрица-наполнитель</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Плотность, кг/м3</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>модуль упругости, ГПа</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Количество отвердителя, м.%</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Содержание эпоксидных групп,%_2</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Температура вспышки, С_2</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Поверхностная плотность, г/м2</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Модуль упругости при растяжении, ГПа</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Прочность при растяжении, МПа</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Потребление смолы, г/м2</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Угол нашивки, град</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Шаг нашивки</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Плотность нашивки</th>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div><br><label><b>dtype:</b> int64</label>
+</div>
+</div>
+<div class="cell code" data-execution_count="10"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:492}"
+id="_oFMhdWHTFnd" data-outputId="fd313382-86de-4ba1-8be9-327b9ebf4b43">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># все переменные имеют тип float64/int64, качественных характеристик и пробелов в датасете нет</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>df_X.nunique() <span class="co"># количество уникальных значений по каждому из параметров</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="10">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Соотношение матрица-наполнитель</th>
+      <td>1014</td>
+    </tr>
+    <tr>
+      <th>Плотность, кг/м3</th>
+      <td>1013</td>
+    </tr>
+    <tr>
+      <th>модуль упругости, ГПа</th>
+      <td>1020</td>
+    </tr>
+    <tr>
+      <th>Количество отвердителя, м.%</th>
+      <td>1005</td>
+    </tr>
+    <tr>
+      <th>Содержание эпоксидных групп,%_2</th>
+      <td>1004</td>
+    </tr>
+    <tr>
+      <th>Температура вспышки, С_2</th>
+      <td>1003</td>
+    </tr>
+    <tr>
+      <th>Поверхностная плотность, г/м2</th>
+      <td>1004</td>
+    </tr>
+    <tr>
+      <th>Модуль упругости при растяжении, ГПа</th>
+      <td>1004</td>
+    </tr>
+    <tr>
+      <th>Прочность при растяжении, МПа</th>
+      <td>1004</td>
+    </tr>
+    <tr>
+      <th>Потребление смолы, г/м2</th>
+      <td>1003</td>
+    </tr>
+    <tr>
+      <th>Угол нашивки, град</th>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>Шаг нашивки</th>
+      <td>989</td>
+    </tr>
+    <tr>
+      <th>Плотность нашивки</th>
+      <td>988</td>
+    </tr>
+  </tbody>
+</table>
+</div><br><label><b>dtype:</b> int64</label>
+</div>
+</div>
+<div class="cell code" data-execution_count="11"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="TgKrmysgQd4T" data-outputId="5e4dc883-9239-4ee5-87dc-08a41ac6a1ac">
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># из всех параметров примечателен угол нашивки - у него всего 2 уникальных значения</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>df_X[<span class="st">&#39;Угол нашивки, град&#39;</span>].unique()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="11">
+<pre><code>array([ 0, 90])</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="12"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:458}"
+id="SKIyT1S4VUgO" data-outputId="41c3008a-be18-4de4-f935-da97c8d7e7ed">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>df_X[<span class="st">&#39;Угол нашивки, град&#39;</span>] <span class="op">=</span> df_X[<span class="st">&#39;Угол нашивки, град&#39;</span>].replace({<span class="fl">0.0</span>: <span class="dv">0</span>, <span class="fl">90.0</span>: <span class="dv">1</span>}).astype(<span class="bu">int</span>) <span class="co"># заменяем значения градусов на целые числа 0 и 1</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>df_X <span class="op">=</span> df_X.rename(columns<span class="op">=</span>{<span class="st">&#39;Угол нашивки, град&#39;</span> : <span class="st">&#39;Угол нашивки&#39;</span>, <span class="st">&#39;модуль упругости, ГПа&#39;</span> : <span class="st">&#39;Модуль упругости, ГПа&#39;</span>}) <span class="co"># так как мы теперь имеем дело не с градусами в качестве единицы измерения, изменяем название соответствующего столбца</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>df_X</span></code></pre></div>
+<div class="output execute_result" data-execution_count="12">
+
+  <div id="df-a46f7699-45aa-4333-8b2f-78017281af91" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Соотношение матрица-наполнитель</th>
+      <th>Плотность, кг/м3</th>
+      <th>Модуль упругости, ГПа</th>
+      <th>Количество отвердителя, м.%</th>
+      <th>Содержание эпоксидных групп,%_2</th>
+      <th>Температура вспышки, С_2</th>
+      <th>Поверхностная плотность, г/м2</th>
+      <th>Модуль упругости при растяжении, ГПа</th>
+      <th>Прочность при растяжении, МПа</th>
+      <th>Потребление смолы, г/м2</th>
+      <th>Угол нашивки</th>
+      <th>Шаг нашивки</th>
+      <th>Плотность нашивки</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1.857143</td>
+      <td>2030.000000</td>
+      <td>738.736842</td>
+      <td>30.000000</td>
+      <td>22.267857</td>
+      <td>100.000000</td>
+      <td>210.000000</td>
+      <td>70.000000</td>
+      <td>3000.000000</td>
+      <td>220.000000</td>
+      <td>0</td>
+      <td>4.000000</td>
+      <td>57.000000</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1.857143</td>
+      <td>2030.000000</td>
+      <td>738.736842</td>
+      <td>50.000000</td>
+      <td>23.750000</td>
+      <td>284.615385</td>
+      <td>210.000000</td>
+      <td>70.000000</td>
+      <td>3000.000000</td>
+      <td>220.000000</td>
+      <td>0</td>
+      <td>4.000000</td>
+      <td>60.000000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1.857143</td>
+      <td>2030.000000</td>
+      <td>738.736842</td>
+      <td>49.900000</td>
+      <td>33.000000</td>
+      <td>284.615385</td>
+      <td>210.000000</td>
+      <td>70.000000</td>
+      <td>3000.000000</td>
+      <td>220.000000</td>
+      <td>0</td>
+      <td>4.000000</td>
+      <td>70.000000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1.857143</td>
+      <td>2030.000000</td>
+      <td>738.736842</td>
+      <td>129.000000</td>
+      <td>21.250000</td>
+      <td>300.000000</td>
+      <td>210.000000</td>
+      <td>70.000000</td>
+      <td>3000.000000</td>
+      <td>220.000000</td>
+      <td>0</td>
+      <td>5.000000</td>
+      <td>47.000000</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2.771331</td>
+      <td>2030.000000</td>
+      <td>753.000000</td>
+      <td>111.860000</td>
+      <td>22.267857</td>
+      <td>284.615385</td>
+      <td>210.000000</td>
+      <td>70.000000</td>
+      <td>3000.000000</td>
+      <td>220.000000</td>
+      <td>0</td>
+      <td>5.000000</td>
+      <td>57.000000</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1018</th>
+      <td>2.271346</td>
+      <td>1952.087902</td>
+      <td>912.855545</td>
+      <td>86.992183</td>
+      <td>20.123249</td>
+      <td>324.774576</td>
+      <td>209.198700</td>
+      <td>73.090961</td>
+      <td>2387.292495</td>
+      <td>125.007669</td>
+      <td>1</td>
+      <td>9.076380</td>
+      <td>47.019770</td>
+    </tr>
+    <tr>
+      <th>1019</th>
+      <td>3.444022</td>
+      <td>2050.089171</td>
+      <td>444.732634</td>
+      <td>145.981978</td>
+      <td>19.599769</td>
+      <td>254.215401</td>
+      <td>350.660830</td>
+      <td>72.920827</td>
+      <td>2360.392784</td>
+      <td>117.730099</td>
+      <td>1</td>
+      <td>10.565614</td>
+      <td>53.750790</td>
+    </tr>
+    <tr>
+      <th>1020</th>
+      <td>3.280604</td>
+      <td>1972.372865</td>
+      <td>416.836524</td>
+      <td>110.533477</td>
+      <td>23.957502</td>
+      <td>248.423047</td>
+      <td>740.142791</td>
+      <td>74.734344</td>
+      <td>2662.906040</td>
+      <td>236.606764</td>
+      <td>1</td>
+      <td>4.161154</td>
+      <td>67.629684</td>
+    </tr>
+    <tr>
+      <th>1021</th>
+      <td>3.705351</td>
+      <td>2066.799773</td>
+      <td>741.475517</td>
+      <td>141.397963</td>
+      <td>19.246945</td>
+      <td>275.779840</td>
+      <td>641.468152</td>
+      <td>74.042708</td>
+      <td>2071.715856</td>
+      <td>197.126067</td>
+      <td>1</td>
+      <td>6.313201</td>
+      <td>58.261074</td>
+    </tr>
+    <tr>
+      <th>1022</th>
+      <td>3.808020</td>
+      <td>1890.413468</td>
+      <td>417.316232</td>
+      <td>129.183416</td>
+      <td>27.474763</td>
+      <td>300.952708</td>
+      <td>758.747882</td>
+      <td>74.309704</td>
+      <td>2856.328932</td>
+      <td>194.754342</td>
+      <td>1</td>
+      <td>6.078902</td>
+      <td>77.434468</td>
+    </tr>
+  </tbody>
+</table>
+<p>1023 rows × 13 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-a46f7699-45aa-4333-8b2f-78017281af91')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-a46f7699-45aa-4333-8b2f-78017281af91 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-a46f7699-45aa-4333-8b2f-78017281af91');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-1c726fe7-b403-4e31-9c5a-d1a3c30a6c7f">
+  <button class="colab-df-quickchart" onclick="quickchart('df-1c726fe7-b403-4e31-9c5a-d1a3c30a6c7f')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-1c726fe7-b403-4e31-9c5a-d1a3c30a6c7f button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code" data-execution_count="13"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="3cigjzubW4-a" data-outputId="a4f2ba81-b9be-400d-a5e9-d5bfef04e563">
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># проверка на наличие дубликатов</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>dpl <span class="op">=</span> df_X.duplicated().<span class="bu">sum</span>()</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> dpl <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&#39;Дубликатов нет&#39;</span>)</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&#39;Количество дубликатов в датасете: </span><span class="sc">{</span>dpl<span class="sc">}</span><span class="ss">&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Дубликатов нет
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="14"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:525}"
+id="b090fe6b" data-outputId="f871db2a-0766-45e2-f7cd-399df0f24174">
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># отображение гистограмм распределения параметров</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="co"># размер сетки</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> <span class="dv">7</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="dv">7</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>pl_c <span class="op">=</span> <span class="dv">1</span> <span class="co"># счетчик</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize <span class="op">=</span> (<span class="dv">40</span>, <span class="dv">40</span>))</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col <span class="kw">in</span> df_X.columns:</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>    plt.subplot(r, c, pl_c)</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>    sns.histplot(data <span class="op">=</span> df_X[col], kde<span class="op">=</span><span class="va">True</span>, color<span class="op">=</span>(<span class="fl">0.9</span>, <span class="dv">0</span>, <span class="fl">0.8</span>))</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>    plt.xlabel(<span class="va">None</span>)</span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>    plt.ylabel(<span class="va">None</span>)</span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>    plt.title(col, size <span class="op">=</span> <span class="dv">12</span>)</span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>    pl_c <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a><span class="co"># можно предположить наличие выбросов у параметров плотности, содержания эпоксидных групп, температуры вспышки и плотности нашивки</span></span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a><span class="co"># визуально все параметры, за исключением угла нашивки, приближены к нормальному распределению</span></span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_018c3ee86fa94c8f8b709a7c3e74ff7d/f136f89fc265aa32ab625d8115aff859fb393b35.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="15"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:147}"
+id="wlOW4srsZ0G6" data-outputId="47ecf18c-d5ea-4e60-a17f-7560b7cc28eb">
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># &quot;Необходимо также для каждой колонке получить среднее, медианное значение&quot;</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>df_X.describe().loc[[<span class="st">&#39;mean&#39;</span>, <span class="st">&#39;50%&#39;</span>]]</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="co"># для большинства параметров (кроме поверхностной плотности и угла нашивки) средние и медианные значения очень близки, что указывает на симметричное распределение данных</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="15">
+
+  <div id="df-c4046d41-6889-4b91-9198-ec3bf3f6d8a1" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Соотношение матрица-наполнитель</th>
+      <th>Плотность, кг/м3</th>
+      <th>Модуль упругости, ГПа</th>
+      <th>Количество отвердителя, м.%</th>
+      <th>Содержание эпоксидных групп,%_2</th>
+      <th>Температура вспышки, С_2</th>
+      <th>Поверхностная плотность, г/м2</th>
+      <th>Модуль упругости при растяжении, ГПа</th>
+      <th>Прочность при растяжении, МПа</th>
+      <th>Потребление смолы, г/м2</th>
+      <th>Угол нашивки</th>
+      <th>Шаг нашивки</th>
+      <th>Плотность нашивки</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>mean</th>
+      <td>2.930366</td>
+      <td>1975.734888</td>
+      <td>739.923233</td>
+      <td>110.570769</td>
+      <td>22.244390</td>
+      <td>285.882151</td>
+      <td>482.731833</td>
+      <td>73.328571</td>
+      <td>2466.922843</td>
+      <td>218.423144</td>
+      <td>0.491691</td>
+      <td>6.899222</td>
+      <td>57.153929</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>2.906878</td>
+      <td>1977.621657</td>
+      <td>739.664328</td>
+      <td>110.564840</td>
+      <td>22.230744</td>
+      <td>285.896812</td>
+      <td>451.864365</td>
+      <td>73.268805</td>
+      <td>2459.524526</td>
+      <td>219.198882</td>
+      <td>0.000000</td>
+      <td>6.916144</td>
+      <td>57.341920</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-c4046d41-6889-4b91-9198-ec3bf3f6d8a1')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-c4046d41-6889-4b91-9198-ec3bf3f6d8a1 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-c4046d41-6889-4b91-9198-ec3bf3f6d8a1');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-e1e3c6ff-2504-4345-8a9c-dc6866ffd557">
+  <button class="colab-df-quickchart" onclick="quickchart('df-e1e3c6ff-2504-4345-8a9c-dc6866ffd557')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-e1e3c6ff-2504-4345-8a9c-dc6866ffd557 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code" data-execution_count="16"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:662}"
+id="U9UYJmcJpJrA" data-outputId="a709855e-68ba-40d5-d2bf-3787edab236e">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># диаграммы &quot;ящика с усами&quot; - проверка на выбросы</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>sc <span class="op">=</span> MinMaxScaler()</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>sc.fit(df_X)</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize <span class="op">=</span> (<span class="dv">25</span>, <span class="dv">10</span>))</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>plt.boxplot(pd.DataFrame(sc.transform(df_X)), labels <span class="op">=</span> df_X.columns, patch_artist <span class="op">=</span> <span class="va">True</span>, vert <span class="op">=</span> <span class="va">False</span>, medianprops <span class="op">=</span> <span class="bu">dict</span>(color <span class="op">=</span> <span class="st">&#39;black&#39;</span>))</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_018c3ee86fa94c8f8b709a7c3e74ff7d/b219d4035d43bb64bfd67783a6cd57d41d6c5d20.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="17"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="stK_ubL6RGR3" data-outputId="9236faca-3b75-4020-8278-4065b1bec0ae">
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># как видно из диаграмм, выбросы присутствуют во всех параметрах (кроме угла нашивки), далее необходимо построить попарные графики рассеяния точек</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>sns.set_style(<span class="st">&#39;ticks&#39;</span>)</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>sns.pairplot(df_X,</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>             diag_kind <span class="op">=</span> <span class="st">&#39;kde&#39;</span>,  <span class="co"># использование ядерной оценки плотности на диагонали</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>             kind <span class="op">=</span> <span class="st">&#39;scatter&#39;</span>,   <span class="co"># тип графика рассеяния</span></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>             plot_kws <span class="op">=</span> <span class="bu">dict</span>(s<span class="op">=</span><span class="dv">30</span>, alpha<span class="op">=</span><span class="fl">0.7</span>, edgecolor<span class="op">=</span><span class="st">&quot;w&quot;</span>, linewidth<span class="op">=</span><span class="dv">1</span>),</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>             diag_kws <span class="op">=</span> <span class="bu">dict</span>(shade<span class="op">=</span><span class="va">True</span>),  <span class="co"># параметры диагональных графиков</span></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>             height <span class="op">=</span> <span class="dv">3</span>,  <span class="co"># высота каждого подграфика</span></span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>             aspect <span class="op">=</span> <span class="dv">1</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="17">
+<pre><code>&lt;seaborn.axisgrid.PairGrid at 0x79780f57ea10&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_018c3ee86fa94c8f8b709a7c3e74ff7d/f3657dc5da24df17375fa1d6c1579878ab817f4f.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="18"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="Ud6UyCFiUX5l" data-outputId="1917beba-362f-4fe3-c9e5-225d87fee8cf">
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># как можно увидеть из графиков, не наблюдаются четкие линейные зависимостей между парами параметров, то есть изменения одного параметра не приводят к пропорциональным изменениям другого параметра</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="co"># простроим тепловую корреляционнуую карту</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>, <span class="dv">10</span>))</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>sns.heatmap(</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>        df_X.corr(),</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>        mask <span class="op">=</span> np.triu(df_X.corr()),</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>        annot<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>        fmt<span class="op">=</span><span class="st">&quot;.3f&quot;</span>,</span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>        square <span class="op">=</span> <span class="va">True</span>,</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>        cmap<span class="op">=</span><span class="st">&quot;coolwarm&quot;</span>,</span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>        cbar<span class="op">=</span><span class="va">True</span></span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>     )</span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">40</span>, ha <span class="op">=</span> <span class="st">&#39;right&#39;</span>)</span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a>plt.subplots_adjust(right<span class="op">=</span><span class="dv">3</span>)</span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_018c3ee86fa94c8f8b709a7c3e74ff7d/2eea1a03bc93610ddb63f80aba57cb836cde2690.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="19" id="Hb74_Y_8mUMa">
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># низкие значения (максимальное значение составляет 0,108 - корреляция между плотностьюн нашивки и углом нашивки) свидетельствуют об отсутствии сильных корреляционных связей между переменными</span></span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="20"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="PmO8u8x8sWo4" data-outputId="356fab12-8e3f-4210-be84-dcbc33e2e8b3">
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># метод 3-х сигм</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> outliers_z_score(df_X):</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>    outliers <span class="op">=</span> {}</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> column <span class="kw">in</span> df_X.columns:</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>        mean <span class="op">=</span> df_X[column].mean()</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>        std_dev <span class="op">=</span> df_X[column].std()</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>        z_scores <span class="op">=</span> (df_X[column] <span class="op">-</span> mean) <span class="op">/</span> std_dev</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>        outliers[column] <span class="op">=</span> <span class="bu">len</span>(z_scores[np.<span class="bu">abs</span>(z_scores) <span class="op">&gt;</span> <span class="dv">3</span>])</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> outliers</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a><span class="co"># метод межквартильных расстояний (IQR)</span></span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> outliers_iqr(df_X):</span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>    outliers <span class="op">=</span> {}</span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> column <span class="kw">in</span> df_X.columns:</span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a>        q1 <span class="op">=</span> df_X[column].quantile(<span class="fl">0.25</span>)</span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a>        q3 <span class="op">=</span> df_X[column].quantile(<span class="fl">0.75</span>)</span>
+<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a>        iqr <span class="op">=</span> q3 <span class="op">-</span> q1</span>
+<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a>        lower_bound <span class="op">=</span> q1 <span class="op">-</span> <span class="fl">1.5</span> <span class="op">*</span> iqr</span>
+<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a>        upper_bound <span class="op">=</span> q3 <span class="op">+</span> <span class="fl">1.5</span> <span class="op">*</span> iqr</span>
+<span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a>        outliers[column] <span class="op">=</span> <span class="bu">len</span>(df_X[(df_X[column] <span class="op">&lt;</span> lower_bound) <span class="op">|</span> (df_X[column] <span class="op">&gt;</span> upper_bound)])</span>
+<span id="cb24-21"><a href="#cb24-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> outliers</span>
+<span id="cb24-22"><a href="#cb24-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-23"><a href="#cb24-23" aria-hidden="true" tabindex="-1"></a>outliers_z_score <span class="op">=</span> outliers_z_score(df_X)</span>
+<span id="cb24-24"><a href="#cb24-24" aria-hidden="true" tabindex="-1"></a>outliers_iqr <span class="op">=</span> outliers_iqr(df_X)</span>
+<span id="cb24-25"><a href="#cb24-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-26"><a href="#cb24-26" aria-hidden="true" tabindex="-1"></a>comparison_df <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb24-27"><a href="#cb24-27" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Метод 3-х сигм&#39;</span>: outliers_z_score,</span>
+<span id="cb24-28"><a href="#cb24-28" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Метод IQR&#39;</span>: outliers_iqr</span>
+<span id="cb24-29"><a href="#cb24-29" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb24-30"><a href="#cb24-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-31"><a href="#cb24-31" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Результаты выявления выбросов:&quot;</span>)</span>
+<span id="cb24-32"><a href="#cb24-32" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(comparison_df)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Результаты выявления выбросов:
+                                      Метод 3-х сигм  Метод IQR
+Соотношение матрица-наполнитель                    0          6
+Плотность, кг/м3                                   3          9
+Модуль упругости, ГПа                              2          2
+Количество отвердителя, м.%                        2         14
+Содержание эпоксидных групп,%_2                    2          2
+Температура вспышки, С_2                           3          8
+Поверхностная плотность, г/м2                      2          2
+Модуль упругости при растяжении, ГПа               0          6
+Прочность при растяжении, МПа                      0         11
+Потребление смолы, г/м2                            3          8
+Угол нашивки                                       0          0
+Шаг нашивки                                        0          4
+Плотность нашивки                                  7         21
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="21"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:510}"
+id="XnP0mYNw_4Kd" data-outputId="8f2f3325-6b32-4740-c53c-1d509bb35245">
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># метод межквартильных расстояний захватывает бОльшую долю выбросов, нежели метод 3-х сигм, в связи с чем был выбран именно первый способ, отсекающий все выбросы</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> remove_outliers_iqr(df_X):</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> df_X.copy()</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> column <span class="kw">in</span> df.columns:</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>        q1 <span class="op">=</span> df_X[column].quantile(<span class="fl">0.25</span>)</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>        q3 <span class="op">=</span> df_X[column].quantile(<span class="fl">0.75</span>)</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>        iqr <span class="op">=</span> q3 <span class="op">-</span> q1</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>        lower_bound <span class="op">=</span> q1 <span class="op">-</span> <span class="fl">1.5</span> <span class="op">*</span> iqr</span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>        upper_bound <span class="op">=</span> q3 <span class="op">+</span> <span class="fl">1.5</span> <span class="op">*</span> iqr</span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>        df <span class="op">=</span> df[(df_X[column] <span class="op">&gt;=</span> lower_bound) <span class="op">&amp;</span> (df_X[column] <span class="op">&lt;=</span> upper_bound)]</span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> df</span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> remove_outliers_iqr(df_X)</span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;Размерность датасета до отсечения выбросов </span><span class="sc">{</span>df_X<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">, после - </span><span class="sc">{</span>df<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">, были удалены </span><span class="sc">{</span>df_X<span class="sc">.</span>shape[<span class="dv">0</span>] <span class="op">-</span> df<span class="sc">.</span>shape[<span class="dv">0</span>]<span class="sc">}</span><span class="ss"> выбросов&#39;</span>)</span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb26-17"><a href="#cb26-17" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Размерность датасета до отсечения выбросов (1023, 13), после - (936, 13), были удалены 87 выбросов
+
+
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="21">
+
+  <div id="df-94d59e1c-140b-4a39-a044-45fe689d8a47" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Соотношение матрица-наполнитель</th>
+      <th>Плотность, кг/м3</th>
+      <th>Модуль упругости, ГПа</th>
+      <th>Количество отвердителя, м.%</th>
+      <th>Содержание эпоксидных групп,%_2</th>
+      <th>Температура вспышки, С_2</th>
+      <th>Поверхностная плотность, г/м2</th>
+      <th>Модуль упругости при растяжении, ГПа</th>
+      <th>Прочность при растяжении, МПа</th>
+      <th>Потребление смолы, г/м2</th>
+      <th>Угол нашивки</th>
+      <th>Шаг нашивки</th>
+      <th>Плотность нашивки</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>1.857143</td>
+      <td>2030.000000</td>
+      <td>738.736842</td>
+      <td>50.000000</td>
+      <td>23.750000</td>
+      <td>284.615385</td>
+      <td>210.000000</td>
+      <td>70.000000</td>
+      <td>3000.000000</td>
+      <td>220.000000</td>
+      <td>0</td>
+      <td>4.000000</td>
+      <td>60.000000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1.857143</td>
+      <td>2030.000000</td>
+      <td>738.736842</td>
+      <td>129.000000</td>
+      <td>21.250000</td>
+      <td>300.000000</td>
+      <td>210.000000</td>
+      <td>70.000000</td>
+      <td>3000.000000</td>
+      <td>220.000000</td>
+      <td>0</td>
+      <td>5.000000</td>
+      <td>47.000000</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2.771331</td>
+      <td>2030.000000</td>
+      <td>753.000000</td>
+      <td>111.860000</td>
+      <td>22.267857</td>
+      <td>284.615385</td>
+      <td>210.000000</td>
+      <td>70.000000</td>
+      <td>3000.000000</td>
+      <td>220.000000</td>
+      <td>0</td>
+      <td>5.000000</td>
+      <td>57.000000</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>2.767918</td>
+      <td>2000.000000</td>
+      <td>748.000000</td>
+      <td>111.860000</td>
+      <td>22.267857</td>
+      <td>284.615385</td>
+      <td>210.000000</td>
+      <td>70.000000</td>
+      <td>3000.000000</td>
+      <td>220.000000</td>
+      <td>0</td>
+      <td>5.000000</td>
+      <td>60.000000</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>2.569620</td>
+      <td>1910.000000</td>
+      <td>807.000000</td>
+      <td>111.860000</td>
+      <td>22.267857</td>
+      <td>284.615385</td>
+      <td>210.000000</td>
+      <td>70.000000</td>
+      <td>3000.000000</td>
+      <td>220.000000</td>
+      <td>0</td>
+      <td>5.000000</td>
+      <td>70.000000</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1018</th>
+      <td>2.271346</td>
+      <td>1952.087902</td>
+      <td>912.855545</td>
+      <td>86.992183</td>
+      <td>20.123249</td>
+      <td>324.774576</td>
+      <td>209.198700</td>
+      <td>73.090961</td>
+      <td>2387.292495</td>
+      <td>125.007669</td>
+      <td>1</td>
+      <td>9.076380</td>
+      <td>47.019770</td>
+    </tr>
+    <tr>
+      <th>1019</th>
+      <td>3.444022</td>
+      <td>2050.089171</td>
+      <td>444.732634</td>
+      <td>145.981978</td>
+      <td>19.599769</td>
+      <td>254.215401</td>
+      <td>350.660830</td>
+      <td>72.920827</td>
+      <td>2360.392784</td>
+      <td>117.730099</td>
+      <td>1</td>
+      <td>10.565614</td>
+      <td>53.750790</td>
+    </tr>
+    <tr>
+      <th>1020</th>
+      <td>3.280604</td>
+      <td>1972.372865</td>
+      <td>416.836524</td>
+      <td>110.533477</td>
+      <td>23.957502</td>
+      <td>248.423047</td>
+      <td>740.142791</td>
+      <td>74.734344</td>
+      <td>2662.906040</td>
+      <td>236.606764</td>
+      <td>1</td>
+      <td>4.161154</td>
+      <td>67.629684</td>
+    </tr>
+    <tr>
+      <th>1021</th>
+      <td>3.705351</td>
+      <td>2066.799773</td>
+      <td>741.475517</td>
+      <td>141.397963</td>
+      <td>19.246945</td>
+      <td>275.779840</td>
+      <td>641.468152</td>
+      <td>74.042708</td>
+      <td>2071.715856</td>
+      <td>197.126067</td>
+      <td>1</td>
+      <td>6.313201</td>
+      <td>58.261074</td>
+    </tr>
+    <tr>
+      <th>1022</th>
+      <td>3.808020</td>
+      <td>1890.413468</td>
+      <td>417.316232</td>
+      <td>129.183416</td>
+      <td>27.474763</td>
+      <td>300.952708</td>
+      <td>758.747882</td>
+      <td>74.309704</td>
+      <td>2856.328932</td>
+      <td>194.754342</td>
+      <td>1</td>
+      <td>6.078902</td>
+      <td>77.434468</td>
+    </tr>
+  </tbody>
+</table>
+<p>936 rows × 13 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-94d59e1c-140b-4a39-a044-45fe689d8a47')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-94d59e1c-140b-4a39-a044-45fe689d8a47 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-94d59e1c-140b-4a39-a044-45fe689d8a47');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-3d706d4e-6d89-49ee-a4a6-007f9a203d00">
+  <button class="colab-df-quickchart" onclick="quickchart('df-3d706d4e-6d89-49ee-a4a6-007f9a203d00')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-3d706d4e-6d89-49ee-a4a6-007f9a203d00 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code" data-execution_count="22"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:714}"
+id="0C118tYgfZYU" data-outputId="257b9054-585f-44f2-9283-1e8d74936417">
+<div class="sourceCode" id="cb28"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> remove_outliers_iqr1(df):</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>    df1 <span class="op">=</span> df.copy()</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> column <span class="kw">in</span> df.columns:</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>        q1 <span class="op">=</span> df[column].quantile(<span class="fl">0.25</span>)</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>        q3 <span class="op">=</span> df[column].quantile(<span class="fl">0.75</span>)</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>        iqr <span class="op">=</span> q3 <span class="op">-</span> q1</span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>        lower_bound <span class="op">=</span> q1 <span class="op">-</span> <span class="fl">1.5</span> <span class="op">*</span> iqr</span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>        upper_bound <span class="op">=</span> q3 <span class="op">+</span> <span class="fl">1.5</span> <span class="op">*</span> iqr</span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>        df1 <span class="op">=</span> df1[(df[column] <span class="op">&gt;=</span> lower_bound) <span class="op">&amp;</span> (df[column] <span class="op">&lt;=</span> upper_bound)]</span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> df1</span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a>df1 <span class="op">=</span> remove_outliers_iqr(df)</span>
+<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;Размерность датасета до второго отсечения выбросов </span><span class="sc">{</span>df<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">, после - </span><span class="sc">{</span>df1<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">, были удалены </span><span class="sc">{</span>df<span class="sc">.</span>shape[<span class="dv">0</span>] <span class="op">-</span> df1<span class="sc">.</span>shape[<span class="dv">0</span>]<span class="sc">}</span><span class="ss"> выбросов&#39;</span>)</span>
+<span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-17"><a href="#cb28-17" aria-hidden="true" tabindex="-1"></a>sc.fit(df1)</span>
+<span id="cb28-18"><a href="#cb28-18" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize <span class="op">=</span> (<span class="dv">25</span>, <span class="dv">10</span>))</span>
+<span id="cb28-19"><a href="#cb28-19" aria-hidden="true" tabindex="-1"></a>plt.boxplot(pd.DataFrame(sc.transform(df1)), labels <span class="op">=</span> df_X.columns, patch_artist <span class="op">=</span> <span class="va">True</span>, vert <span class="op">=</span> <span class="va">False</span>, medianprops <span class="op">=</span> <span class="bu">dict</span>(color <span class="op">=</span> <span class="st">&#39;black&#39;</span>))</span>
+<span id="cb28-20"><a href="#cb28-20" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Размерность датасета до второго отсечения выбросов (936, 13), после - (926, 13), были удалены 10 выбросов
+
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_018c3ee86fa94c8f8b709a7c3e74ff7d/dc04dff908fbebcf2a772938be7590dc062ddc1d.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="23"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:714}"
+id="Bzl7w02erybK" data-outputId="b2dc9db2-a772-4c09-f993-e0987647f32e">
+<div class="sourceCode" id="cb30"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># большая часть выбросов была исключена, но они до сих пор присутствуют в датасете</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> remove_outliers_iqr1(df1):</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>    df2 <span class="op">=</span> df1.copy()</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> column <span class="kw">in</span> df.columns:</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>        q1 <span class="op">=</span> df1[column].quantile(<span class="fl">0.25</span>)</span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>        q3 <span class="op">=</span> df1[column].quantile(<span class="fl">0.75</span>)</span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a>        iqr <span class="op">=</span> q3 <span class="op">-</span> q1</span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>        lower_bound <span class="op">=</span> q1 <span class="op">-</span> <span class="fl">1.5</span> <span class="op">*</span> iqr</span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a>        upper_bound <span class="op">=</span> q3 <span class="op">+</span> <span class="fl">1.5</span> <span class="op">*</span> iqr</span>
+<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a>        df2 <span class="op">=</span> df1[(df1[column] <span class="op">&gt;=</span> lower_bound) <span class="op">&amp;</span> (df1[column] <span class="op">&lt;=</span> upper_bound)]</span>
+<span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> df2</span>
+<span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-14"><a href="#cb30-14" aria-hidden="true" tabindex="-1"></a>df2 <span class="op">=</span> remove_outliers_iqr(df1)</span>
+<span id="cb30-15"><a href="#cb30-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-16"><a href="#cb30-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;Размерность датасета до второго отсечения выбросов </span><span class="sc">{</span>df1<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">, после - </span><span class="sc">{</span>df2<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">, были удалены </span><span class="sc">{</span>df1<span class="sc">.</span>shape[<span class="dv">0</span>] <span class="op">-</span> df2<span class="sc">.</span>shape[<span class="dv">0</span>]<span class="sc">}</span><span class="ss"> выбросов&#39;</span>)</span>
+<span id="cb30-17"><a href="#cb30-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb30-18"><a href="#cb30-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-19"><a href="#cb30-19" aria-hidden="true" tabindex="-1"></a>sc.fit(df2)</span>
+<span id="cb30-20"><a href="#cb30-20" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize <span class="op">=</span> (<span class="dv">25</span>, <span class="dv">10</span>))</span>
+<span id="cb30-21"><a href="#cb30-21" aria-hidden="true" tabindex="-1"></a>plt.boxplot(pd.DataFrame(sc.transform(df2)), labels <span class="op">=</span> df_X.columns, patch_artist <span class="op">=</span> <span class="va">True</span>, vert <span class="op">=</span> <span class="va">False</span>, medianprops <span class="op">=</span> <span class="bu">dict</span>(color <span class="op">=</span> <span class="st">&#39;black&#39;</span>))</span>
+<span id="cb30-22"><a href="#cb30-22" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Размерность датасета до второго отсечения выбросов (926, 13), после - (922, 13), были удалены 4 выбросов
+
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_018c3ee86fa94c8f8b709a7c3e74ff7d/b592cb2450b77cb534c1bb685be2a22c4e079ea8.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="24"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="So3vfwpnyW2T" data-outputId="d66577b3-5091-407f-e2d5-9170f34b0473">
+<div class="sourceCode" id="cb32"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># готово, теперь наш датасет не имеет выбросов</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df2</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a><span class="co"># отобразим гистрограммы каждого из параметров без нормализации, в исходных единицах</span></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>pl_c <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">35</span>,<span class="dv">35</span>))</span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col <span class="kw">in</span> df.columns:</span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a>    plt.subplot(r, c, pl_c)</span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a>    sns.histplot(data <span class="op">=</span> df[col], kde <span class="op">=</span> <span class="va">True</span>, color <span class="op">=</span> <span class="st">&quot;orange&quot;</span>)</span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a>    plt.xlabel(<span class="va">None</span>)</span>
+<span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a>    plt.ylabel(<span class="va">None</span>)</span>
+<span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a>    plt.title(col, size <span class="op">=</span> <span class="dv">15</span>)</span>
+<span id="cb32-15"><a href="#cb32-15" aria-hidden="true" tabindex="-1"></a>    pl_c <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb32-16"><a href="#cb32-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-17"><a href="#cb32-17" aria-hidden="true" tabindex="-1"></a><span class="co"># все параметры стремятся к нормальному распределению (опять же, за исключением угла нашивки)</span></span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_018c3ee86fa94c8f8b709a7c3e74ff7d/0d3400e09e199c224952b6dc21678accde2d2a21.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="25"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:458}"
+id="kpMM8x_d0klK" data-outputId="7c2b473c-2ffa-4d52-ceb5-984447b9e178">
+<div class="sourceCode" id="cb33"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># готовый для дальнейшего анализа датасет сохраняем в папку</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>df.to_excel(<span class="st">&#39;df_norm.xlsx&#39;</span>)</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_excel(<span class="st">&#39;/content/drive/MyDrive/DatasetsVKR/df_norm.xlsx&#39;</span>)</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div>
+<div class="output execute_result" data-execution_count="25">
+
+  <div id="df-cad86172-ebf2-4d02-9c52-6cf881ce9141" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>Соотношение матрица-наполнитель</th>
+      <th>Плотность, кг/м3</th>
+      <th>Модуль упругости, ГПа</th>
+      <th>Количество отвердителя, м.%</th>
+      <th>Содержание эпоксидных групп,%_2</th>
+      <th>Температура вспышки, С_2</th>
+      <th>Поверхностная плотность, г/м2</th>
+      <th>Модуль упругости при растяжении, ГПа</th>
+      <th>Прочность при растяжении, МПа</th>
+      <th>Потребление смолы, г/м2</th>
+      <th>Угол нашивки</th>
+      <th>Шаг нашивки</th>
+      <th>Плотность нашивки</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>1.857143</td>
+      <td>2030.000000</td>
+      <td>738.736842</td>
+      <td>50.000000</td>
+      <td>23.750000</td>
+      <td>284.615385</td>
+      <td>210.000000</td>
+      <td>70.000000</td>
+      <td>3000.000000</td>
+      <td>220.000000</td>
+      <td>0</td>
+      <td>4.000000</td>
+      <td>60.000000</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>1.857143</td>
+      <td>2030.000000</td>
+      <td>738.736842</td>
+      <td>129.000000</td>
+      <td>21.250000</td>
+      <td>300.000000</td>
+      <td>210.000000</td>
+      <td>70.000000</td>
+      <td>3000.000000</td>
+      <td>220.000000</td>
+      <td>0</td>
+      <td>5.000000</td>
+      <td>47.000000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>2.771331</td>
+      <td>2030.000000</td>
+      <td>753.000000</td>
+      <td>111.860000</td>
+      <td>22.267857</td>
+      <td>284.615385</td>
+      <td>210.000000</td>
+      <td>70.000000</td>
+      <td>3000.000000</td>
+      <td>220.000000</td>
+      <td>0</td>
+      <td>5.000000</td>
+      <td>57.000000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>2.767918</td>
+      <td>2000.000000</td>
+      <td>748.000000</td>
+      <td>111.860000</td>
+      <td>22.267857</td>
+      <td>284.615385</td>
+      <td>210.000000</td>
+      <td>70.000000</td>
+      <td>3000.000000</td>
+      <td>220.000000</td>
+      <td>0</td>
+      <td>5.000000</td>
+      <td>60.000000</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>2.569620</td>
+      <td>1910.000000</td>
+      <td>807.000000</td>
+      <td>111.860000</td>
+      <td>22.267857</td>
+      <td>284.615385</td>
+      <td>210.000000</td>
+      <td>70.000000</td>
+      <td>3000.000000</td>
+      <td>220.000000</td>
+      <td>0</td>
+      <td>5.000000</td>
+      <td>70.000000</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>917</th>
+      <td>918</td>
+      <td>2.271346</td>
+      <td>1952.087902</td>
+      <td>912.855545</td>
+      <td>86.992183</td>
+      <td>20.123249</td>
+      <td>324.774576</td>
+      <td>209.198700</td>
+      <td>73.090961</td>
+      <td>2387.292495</td>
+      <td>125.007669</td>
+      <td>1</td>
+      <td>9.076380</td>
+      <td>47.019770</td>
+    </tr>
+    <tr>
+      <th>918</th>
+      <td>919</td>
+      <td>3.444022</td>
+      <td>2050.089171</td>
+      <td>444.732634</td>
+      <td>145.981978</td>
+      <td>19.599769</td>
+      <td>254.215401</td>
+      <td>350.660830</td>
+      <td>72.920827</td>
+      <td>2360.392784</td>
+      <td>117.730099</td>
+      <td>1</td>
+      <td>10.565614</td>
+      <td>53.750790</td>
+    </tr>
+    <tr>
+      <th>919</th>
+      <td>920</td>
+      <td>3.280604</td>
+      <td>1972.372865</td>
+      <td>416.836524</td>
+      <td>110.533477</td>
+      <td>23.957502</td>
+      <td>248.423047</td>
+      <td>740.142791</td>
+      <td>74.734344</td>
+      <td>2662.906040</td>
+      <td>236.606764</td>
+      <td>1</td>
+      <td>4.161154</td>
+      <td>67.629684</td>
+    </tr>
+    <tr>
+      <th>920</th>
+      <td>921</td>
+      <td>3.705351</td>
+      <td>2066.799773</td>
+      <td>741.475517</td>
+      <td>141.397963</td>
+      <td>19.246945</td>
+      <td>275.779840</td>
+      <td>641.468152</td>
+      <td>74.042708</td>
+      <td>2071.715856</td>
+      <td>197.126067</td>
+      <td>1</td>
+      <td>6.313201</td>
+      <td>58.261074</td>
+    </tr>
+    <tr>
+      <th>921</th>
+      <td>922</td>
+      <td>3.808020</td>
+      <td>1890.413468</td>
+      <td>417.316232</td>
+      <td>129.183416</td>
+      <td>27.474763</td>
+      <td>300.952708</td>
+      <td>758.747882</td>
+      <td>74.309704</td>
+      <td>2856.328932</td>
+      <td>194.754342</td>
+      <td>1</td>
+      <td>6.078902</td>
+      <td>77.434468</td>
+    </tr>
+  </tbody>
+</table>
+<p>922 rows × 14 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-cad86172-ebf2-4d02-9c52-6cf881ce9141')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-cad86172-ebf2-4d02-9c52-6cf881ce9141 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-cad86172-ebf2-4d02-9c52-6cf881ce9141');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-61044a65-1770-479a-a6ef-8c9abf5e41a8">
+  <button class="colab-df-quickchart" onclick="quickchart('df-61044a65-1770-479a-a6ef-8c9abf5e41a8')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-61044a65-1770-479a-a6ef-8c9abf5e41a8 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code" data-execution_count="27"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:457}"
+id="VsLOy-g66FYF" data-outputId="50122daa-da00-4737-9866-0b02e1a4a5ff">
+<div class="sourceCode" id="cb34"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> df.describe()</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>a.T.loc[:, [<span class="st">&#39;min&#39;</span>, <span class="st">&#39;max&#39;</span>]].drop([<span class="st">&#39;Unnamed: 0&#39;</span>], axis <span class="op">=</span> <span class="dv">0</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="27">
+
+  <div id="df-f2be60b9-16b8-4456-86a1-5b1e467d25b5" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>min</th>
+      <th>max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Соотношение матрица-наполнитель</th>
+      <td>0.547391</td>
+      <td>5.314144</td>
+    </tr>
+    <tr>
+      <th>Плотность, кг/м3</th>
+      <td>1784.482245</td>
+      <td>2161.565216</td>
+    </tr>
+    <tr>
+      <th>Модуль упругости, ГПа</th>
+      <td>2.436909</td>
+      <td>1628.000000</td>
+    </tr>
+    <tr>
+      <th>Количество отвердителя, м.%</th>
+      <td>38.668500</td>
+      <td>181.828448</td>
+    </tr>
+    <tr>
+      <th>Содержание эпоксидных групп,%_2</th>
+      <td>15.695894</td>
+      <td>28.955094</td>
+    </tr>
+    <tr>
+      <th>Температура вспышки, С_2</th>
+      <td>179.374391</td>
+      <td>386.067992</td>
+    </tr>
+    <tr>
+      <th>Поверхностная плотность, г/м2</th>
+      <td>0.603740</td>
+      <td>1291.340115</td>
+    </tr>
+    <tr>
+      <th>Модуль упругости при растяжении, ГПа</th>
+      <td>65.793845</td>
+      <td>81.203147</td>
+    </tr>
+    <tr>
+      <th>Прочность при растяжении, МПа</th>
+      <td>1250.392802</td>
+      <td>3654.434359</td>
+    </tr>
+    <tr>
+      <th>Потребление смолы, г/м2</th>
+      <td>72.530873</td>
+      <td>359.052220</td>
+    </tr>
+    <tr>
+      <th>Угол нашивки</th>
+      <td>0.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>Шаг нашивки</th>
+      <td>0.037639</td>
+      <td>13.732404</td>
+    </tr>
+    <tr>
+      <th>Плотность нашивки</th>
+      <td>28.661632</td>
+      <td>86.012427</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-f2be60b9-16b8-4456-86a1-5b1e467d25b5')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-f2be60b9-16b8-4456-86a1-5b1e467d25b5 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-f2be60b9-16b8-4456-86a1-5b1e467d25b5');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-58d79802-d73e-4e24-ade3-ed5d083ae01a">
+  <button class="colab-df-quickchart" onclick="quickchart('df-58d79802-d73e-4e24-ade3-ed5d083ae01a')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-58d79802-d73e-4e24-ade3-ed5d083ae01a button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+</body>
+</html>
